@@ -1,0 +1,10 @@
+^E:\REPOS\GLOG\BUILD-VS\CMAKEFILES\70DE0031965A0A09E9B125838C6EF839\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Repos/glog -BE:/Repos/glog/build-vs --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Repos/glog/build-vs/glog.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
